@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuxeBeauty - Hair & Nail Studio</title>
+    <title>Velvet Studio - Hair & Nail Artistry</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .font-display { font-family: 'Poppins', sans-serif; }
+        /* Am schimbat fontul de titluri la Playfair Display pentru un look mai editorial/fashion */
+        h1, h2, h3, .font-display { font-family: 'Playfair Display', serif; }
         html { scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); }
         
@@ -24,18 +25,18 @@
     <nav class="fixed w-full z-40 top-0 left-0 glass shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3 hover:opacity-80 transition">
-                <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white text-lg shadow-md">
-                    <i class="fa-solid fa-sparkles"></i>
+                <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-lg border border-pink-200">
+                    <i class="fa-solid fa-scissors transform -rotate-45"></i>
                 </div>
                 <div class="leading-tight">
-                    <h1 class="text-xl font-display font-bold text-gray-900 tracking-tight">LuxeBeauty</h1>
-                    <span class="text-[10px] text-pink-700 font-bold uppercase tracking-wider">Hair & Nail Artist</span>
+                    <h1 class="text-2xl font-display font-bold text-gray-900 tracking-tight">Velvet Studio</h1>
+                    <span class="text-[10px] text-pink-700 font-bold uppercase tracking-widest ml-0.5">Hair & Nail Expert</span>
                 </div>
             </a>
             <div class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-600">
                 <a href="#acasa" class="hover:text-pink-600 transition">Acasă</a>
                 <a href="#servicii" class="hover:text-pink-600 transition">Servicii & Tarife</a>
-                <a href="#despre" class="hover:text-pink-600 transition">Despre Studio</a>
+                <a href="#despre" class="hover:text-pink-600 transition">Despre Noi</a>
                 <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
                 <button onclick="toggleBookingModal()" class="bg-pink-600 text-white px-6 py-2.5 rounded-full hover:bg-pink-700 transition shadow-lg hover:shadow-pink-500/30 transform hover:-translate-y-0.5 flex items-center gap-2 font-semibold">
                     <i class="fa-regular fa-calendar-check"></i> <span>Programare</span>
@@ -60,8 +61,9 @@
         </div>
         
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full h-full flex flex-col justify-center">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="relative overflow-hidden rounded-[2rem] p-8 md:p-12 shadow-2xl border border-white/80 group transform transition duration-500 hover:scale-[1.01]">
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                
+                <div class="relative overflow-hidden rounded-[2rem] p-8 md:p-12 shadow-2xl border border-white/80 group transform transition duration-500 hover:scale-[1.01] h-full flex flex-col justify-center">
                     <div class="absolute inset-0 z-0 bg-white/90 backdrop-blur-md"></div>
                     <div class="relative z-10">
                         <div class="inline-flex items-center gap-2 bg-pink-50 px-3 py-1 rounded-full mb-6 border border-pink-100">
@@ -74,13 +76,13 @@
                         <p class="text-lg text-gray-600 mb-8 font-medium leading-relaxed">
                             Transformăm fiecare vizită într-o experiență de răsfăț. Specialiști în vopsit, tunsori moderne și manichiură impecabilă.
                         </p>
-                        <a href="#servicii" class="inline-flex items-center gap-2 bg-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-pink-700 transition shadow-lg hover:shadow-pink-500/40">
+                        <a href="#servicii" class="inline-flex items-center gap-2 bg-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-pink-700 transition shadow-lg hover:shadow-pink-500/40 w-fit">
                             <i class="fa-solid fa-scissors"></i> Vezi Servicii
                         </a>
                     </div>
                 </div>
 
-                <div class="relative overflow-hidden rounded-[2rem] p-8 md:p-12 shadow-2xl border border-pink-500/30 group mt-4 md:mt-0 transform transition duration-500 hover:scale-[1.01] md:w-4/5 md:ml-auto">
+                <div class="relative overflow-hidden rounded-[2rem] p-8 md:p-12 shadow-2xl border border-pink-500/30 group mt-4 md:mt-0 transform transition duration-500 hover:scale-[1.01] md:w-4/5 md:ml-auto h-full flex flex-col justify-center">
                     <div class="absolute inset-0 z-0 bg-gradient-to-br from-slate-900 to-pink-900"></div>
                     <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500 rounded-full mix-blend-overlay filter blur-xl opacity-20"></div>
                     <div class="relative z-10 text-white">
@@ -91,7 +93,7 @@
                         <p class="text-pink-100 text-lg mb-6 leading-relaxed">
                             Ești la prima vizită în studioul nostru? Profită de reducerea specială pentru pachetul complet.
                         </p>
-                        <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl border border-white/10">
+                        <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl border border-white/10 w-fit">
                             <span class="text-4xl font-bold text-yellow-400">-15%</span>
                             <div class="h-8 w-px bg-white/20"></div>
                             <div>
@@ -163,10 +165,10 @@
     <section id="despre" class="py-24 bg-pink-50">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2 relative">
-                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f8717368?q=80&w=800&auto=format&fit=crop" class="rounded-3xl shadow-2xl w-full h-[500px] object-cover">
+                <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=800&auto=format&fit=crop" class="rounded-3xl shadow-2xl w-full h-[500px] object-cover" alt="Manichiura premium">
                 <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl hidden md:block">
-                    <p class="text-3xl font-bold text-pink-600">Premium</p>
-                    <p class="text-sm text-gray-500 font-bold uppercase">Materiale Calitate</p>
+                    <p class="text-3xl font-bold text-pink-600">100%</p>
+                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Produse Profesionale</p>
                 </div>
             </div>
             <div class="md:w-1/2">
@@ -197,7 +199,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12 mb-12">
                 <div class="col-span-1 md:col-span-1">
-                    <h2 class="text-2xl font-bold text-white font-display mb-6">LuxeBeauty</h2>
+                    <h2 class="text-2xl font-bold text-white font-display mb-6">Velvet Studio</h2>
                     <p class="text-sm mb-8 leading-relaxed">Destinația ta pentru o transformare spectaculoasă și momente de relaxare.</p>
                     <div class="flex gap-3">
                         <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-[#1877F2] text-white rounded-lg flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
@@ -210,7 +212,7 @@
                     <ul class="space-y-4">
                         <li class="flex gap-3 items-start"><i class="fa-solid fa-location-dot text-pink-500 mt-1"></i> <span class="text-sm">Strada Exemplului Nr. 24, București</span></li>
                         <li class="flex gap-3 items-center"><i class="fa-solid fa-phone text-pink-500"></i> <a href="tel:0723040207" class="text-sm hover:text-white transition">0723 040 207</a></li>
-                        <li class="flex gap-3 items-center"><i class="fa-solid fa-envelope text-pink-500"></i> <span class="text-sm">office@luxebeauty.ro</span></li>
+                        <li class="flex gap-3 items-center"><i class="fa-solid fa-envelope text-pink-500"></i> <span class="text-sm">office@velvetstudio.ro</span></li>
                     </ul>
                 </div>
                 <div class="md:col-span-2">
@@ -221,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center text-sm text-gray-600"><p>&copy; 2026 LuxeBeauty Artist.</p></div>
+            <div class="text-center text-sm text-gray-600"><p>&copy; 2026 Velvet Studio.</p></div>
         </div>
     </footer>
 
